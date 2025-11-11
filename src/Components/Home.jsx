@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../Context/CreateContext';
 
 const Home = () => {
+
+    const rahim = useContext(AppContext); 
+    console.log(rahim);
+    
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen">
